@@ -1,6 +1,7 @@
 import React from "react"
 import Card from "./components/Card"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import data from "./data"
 
 
@@ -13,12 +14,17 @@ function App () {
           )
         
     return (
-        <div>
+    <section>
+        <div className="container">
             <Navbar />
-            <section className="card--list">
+            <section className="spikes">
+                <div className="card--list">
                 {cards}
+                </div>
             </section>
+            <Footer />
         </div>
+   </section>
     )
 }
 export default App;
